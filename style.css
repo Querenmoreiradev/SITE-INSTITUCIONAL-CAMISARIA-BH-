@@ -792,4 +792,64 @@ right:15px;
 padding:12px;
 }
 
+}/* ============================= */
+/* MENU MOBILE */
+/* ============================= */
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* CELULAR */
+
+@media (max-width:768px){
+
+/* header deixa de ser fixo */
+header{
+position:relative;
+}
+
+/* botão hambúrguer aparece */
+.menu-toggle{
+display:block;
+}
+
+/* esconder menu inicialmente */
+nav{
+display:none;
+flex-direction:column;
+width:100%;
+background:white;
+padding:15px 0;
+}
+
+/* quando abrir menu */
+nav.active{
+display:flex;
+}
+
+/* links do menu */
+nav a{
+margin:10px 0;
+font-size:16px;
+}
+
+/* organização header */
+.nav{
+flex-direction:column;
+align-items:flex-start;
+}
+
+}@media (max-width:768px){
+
+header{
+position:relative;
+}
+
+.hero{
+margin-top:0;
+}
+
 }
